@@ -36,7 +36,7 @@ app.post("/posts", async (req, res) => {
   }
 });
 
-// BORRAR LOS POSTS.
+// BORRAR LOS POSTS
 app.delete("/posts/:id", async (req, res) => {
   const { id } = req.params;
   const result = await eliminarPosts(id);
